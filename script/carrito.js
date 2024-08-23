@@ -26,6 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Evento para finalizar compra
     checkoutButton.addEventListener('click', () => {
         localStorage.removeItem('cart'); // Vaciar el carrito
-        window.location.href = '../pages/datos.html'; // Redirigir a la página de confirmación o inicio
+        window.location.href = '../pages/pprincipal.html'; // Redirigir a la página de confirmación o inicio
     });
 });

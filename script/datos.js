@@ -4,5 +4,5 @@ function showConfirmation() {
 
 function closeConfirmation() {
     document.getElementById('confirmation-modal').style.display = 'none';
-    window.location.href = '../index.html'; 
+    window.location.href = '../pages/pprincipal.html'; 
 }
