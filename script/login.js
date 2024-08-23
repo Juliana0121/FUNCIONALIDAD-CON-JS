@@ -8,7 +8,7 @@ loginForm.addEventListener('submit', (e)=>{
     if(!validUser){
         return alert('Usuario y/o contraseña incorrectos!')
     }
-    alert(`Bienvenido ${validUser.name}`)
+    alert(`Bienvenido(a) ${validUser.name}`)
     localStorage.setItem('login_success', JSON.stringify(validUser))
     window.location.href = '../index.html'   
 
