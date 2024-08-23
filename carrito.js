@@ -1,74 +1,35 @@
-document.addEventListener('DOMContentLoaded', () => {
-  // Seleccionar todos los botones de "Añadir al Carrito"
-  const addToCartButtons = document.querySelectorAll('.add-to-cart');
-  
-  // Iterar sobre cada botón y añadir un evento de clic
-  addToCartButtons.forEach(button => {
-      button.addEventListener('click', () => {
-          // Obtener el producto correspondiente al botón clicado
-          const producto = button.parentElement;
-          const nombre = producto.querySelector('h4').innerText;
-          const precio = producto.querySelector('p:nth-child(4)').innerText.replace('Precio: $', '');
-          const imagen = producto.querySelector('img').src;
+document.addEventListener('DOMContentLoaded', function() {
+    const cart = [];
 
-          // Crear un objeto con la información del producto
-          const productoObj = {
-              nombre: nombre,
-              precio: parseFloat(precio),
-              imagen: imagen,
-              cantidad: 1 // Inicialmente la cantidad es 1
-          };
+    document.querySelectorAll('.add-to-cart').forEach(button => {
+        button.addEventListener('click', function() {
+            const productName = this.closest('.producto').querySelector('h4').innerText;
+            const productPrice = parseFloat(this.closest('.producto').querySelector('p').innerText.replace('Precio: $', ''));
 
-          // Obtener el carrito del LocalStorage
-          let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+            const existingProduct = cart.find(item => item.name === productName);
+            if (existingProduct) {
+                existingProduct.quantity++;
+            } else {
+                cart.push({ name: productName, price: productPrice, quantity: 1 });
+            }
+            updateCartPreview();
+        });
+    });
 
-          // Verificar si el producto ya está en el carrito
-          const productoExistente = carrito.find(item => item.nombre === productoObj.nombre);
-          
-          if (productoExistente) {
-              // Si el producto ya está en el carrito, incrementar la cantidad
-              productoExistente.cantidad++;
-          } else {
-              // Si el producto no está en el carrito, añadirlo
-              carrito.push(productoObj);
-          }
+    function updateCartPreview() {
+        const cartItems = document.getElementById('cart-items');
+        const cartTotal = document.getElementById('cart-total');
 
-          // Guardar el carrito actualizado en el LocalStorage
-          localStorage.setItem('carrito', JSON.stringify(carrito));
+        cartItems.innerHTML = '';
+        let total = 0;
 
-          // Actualizar la vista previa del carrito (si es necesario)
-          actualizarVistaPreviaCarrito(carrito);
-      });
-  });
+        cart.forEach(item => {
+            const itemElement = document.createElement('div');
+            itemElement.innerHTML = `<p>${item.name} - $${item.price} x ${item.quantity}</p>`;
+            cartItems.appendChild(itemElement);
+            total += item.price * item.quantity;
+        });
+
+        cartTotal.innerText = total.toFixed(2);
+    }
 });
-
-function actualizarVistaPreviaCarrito(carrito) {
-  const cartItemsContainer = document.getElementById('cart-items');
-  const cartTotal = document.getElementById('cart-total');
-
-  // Limpiar el contenido actual
-  cartItemsContainer.innerHTML = '';
-
-  // Calcular el nuevo total
-  let total = 0;
-
-  // Iterar sobre los productos en el carrito y agregarlos a la vista previa
-  carrito.forEach(producto => {
-      const item = document.createElement('div');
-      item.classList.add('cart-item');
-      item.innerHTML = `
-          <img src="${producto.imagen}" alt="${producto.nombre}">
-          <div>
-              <h4>${producto.nombre}</h4>
-              <p>Precio: $${producto.precio}</p>
-              <p>Cantidad: ${producto.cantidad}</p>
-          </div>
-      `;
-      cartItemsContainer.appendChild(item);
-
-      total += producto.precio * producto.cantidad;
-  });
-
-  // Actualizar el total en la vista previa
-  cartTotal.innerText = total.toFixed(2);
-}
