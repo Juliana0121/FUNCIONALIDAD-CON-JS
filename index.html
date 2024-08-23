@@ -27,18 +27,12 @@
                     </div>
                 </li>
                 <li class="cart-icon">
-                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="./pages/carrito.html" class="fas fa-shopping-cart"></a>
                 </li>
             </ul>
         </nav>
         <div class="logo">
             <h1>El Alfil</h1>
-        </div>
-        <div class="cart-preview">
-            <h4>Carrito</h4>
-            <div id="cart-items"></div>
-            <p>Total: $<span id="cart-total">0</span></p>
-            <button id="checkout">Proceder a la Compra</button>
         </div>
     </header>
 
@@ -51,59 +45,58 @@
                 <div class="producto">
                     <img src="./Img/cerveza1.png" alt="Cerveza 1">
                     <a href="./productos/cerveza1.html"><h4>Cerveza Belga Blanche de Charleroi</h4></a>
-                    <p>Botella 330 ml</p>
                     <p>Precio: $28</p>
-                    <button class="add-to-cart"><a href="./carrito.html">Añadir al Carrito</a></button>
+                    <button class="add-to-cart" data-name="Cerveza Belga Blanche de Charleroi" data-price="28" data-img="./Img/cerveza1.png">Añadir al Carrito</button>
+
                 </div>
                 <div class="producto">
                     <img src="./Img/cerveza2.png" alt="Cerveza 2">
                     <a href="./productos/cerveza2.html"><h4>Cerveza Belga Gulden Draak Classic</h4></a>
-                    <p>Botella 330 ml</p>
                     <p>Precio: $24</p>
-                    <button class="add-to-cart"><a href="./carrito.html">Añadir al Carrito</a></button>
+                    <button class="add-to-cart" data-name="Cerveza Belga Gulden Draak Classic" data-price="24" data-img="./Img/cerveza2.png">Añadir al Carrito</button>
+
                 </div>
                 <div class="producto">
                     <img src="./Img/cerveza3.png" alt="Cerveza 3">
                     <a href="./productos/cerveza3.html"><h4>Cerveza Belga Chimay Red</h4></a>
-                    <p>Botella 750 ml</p>
                     <p>Precio: $60</p>
-                    <button class="add-to-cart"><a href="./carrito.html">Añadir al Carrito</a></button>
+                    <button class="add-to-cart" data-name="Cerveza Belga Chimay Red" data-price="60" data-img="./Img/cerveza3.png">Añadir al Carrito</button>
+
                 </div>
                 <div class="producto">
                     <img src="./Img/cerveza4.png" alt="Cerveza 4">
                     <a href="./productos/cerveza4.html"><h4>Cerveza Delirium Tremens</h4></a>
-                    <p>Botella 330 ml</p>
                     <p>Precio: $26</p>
-                    <button class="add-to-cart"><a href="./carrito.html">Añadir al Carrito</a></button>
+                    <button class="add-to-cart" data-name="Cerveza Delirium Tremens" data-price="26" data-img="./Img/cerveza4.png">Añadir al Carrito</button>
+
                 </div>
                 <div class="producto">
                     <img src="./Img/cerveza5.png" alt="Cerveza 5">
                     <a href="./productos/cerveza5.html"><h4>Cerveza Gulden Draak Brewmaster</h4></a>
-                    <p>Botella 750 ml</p>
                     <p>Precio: $70</p>
-                    <button class="add-to-cart"><a href="./carrito.html">Añadir al Carrito</a></button>
+                    <button class="add-to-cart" data-name="Cerveza Gulden Draak Brewmaster" data-price="70" data-img="./Img/cerveza5.png">Añadir al Carrito</button>
+
                 </div>
                 <div class="producto">
                     <img src="./Img/cerveza6.png" alt="Cerveza 6">
                     <a href="./productos/cerveza6.html"><h4>Cerveza St Idesbald Blond</h4></a>
-                    <p>Botella 330 ml</p>
                     <p>Precio: $20</p>
-                    <button class="add-to-cart"><a href="./carrito.html">Añadir al Carrito</a></button>
+                    <button class="add-to-cart" data-name="Cerveza St Idesbald Blond" data-price="20" data-img="./Img/cerveza6.png">Añadir al Carrito</button>
+
                 </div>
                 <div class="producto">
                     <img src="./Img/cerveza7.png" alt="Cerveza 7">
                     <a href="./productos/cerveza7.html"><h4>Cerveza Inglesa Adnams Ghost Ship</h4></a>
-                    <p>Botella 500 ml</p>
                     <p>Precio: $22</p>
-                    <button class="add-to-cart"><a href="./carrito.html">Añadir al Carrito</a></button>
+                    <button class="add-to-cart" data-name="Cerveza Inglesa Adnams Ghost Ship" data-price="22" data-img="./Img/cerveza7.png">Añadir al Carrito</button>
+
                 </div>
                 <div class="producto">
                     <img src="./Img/cerveza8.png" alt="Cerveza 8">
                     <a href="./productos/cerveza8.html"><h4>Cerveza Belga Abbaye D’Aulne Brune 6º</h4></a>
-                    <p>Botella 750 ml</p>
                     <p>Precio: $48</p>
-                    <button class="add-to-cart"><a href="./carrito.html">Añadir al Carrito</a></button>
-                </div>
+                    <button class="add-to-cart" data-name="Cerveza Belga Abbaye D’Aulne Brune 6º" data-price="48" data-img="./Img/cerveza8.png">Añadir al Carrito</button>
+
             </div>
         </div>
     
@@ -113,30 +106,30 @@
                 <div class="producto">
                     <img src="./Img/vino1.png" alt="Vino 1">
                     <a href="./productos/vino1.html"><h4>Vino Tinto Igneo</h4></a>
-                    <p>Botella 750 ml</p>
                     <p>Precio: $406</p>
-                    <button class="add-to-cart"><a href="./carrito.html">Añadir al Carrito</a></button>
+                    <button class="add-to-cart" data-name="Vino Tinto Igneo" data-price="406" data-img="./Img/vino1.png">Añadir al Carrito</button>
+
                 </div>
                 <div class="producto">
                     <img src="./Img/vino2.png" alt="Vino 2">
                     <a href="./productos/vino2.html"><h4>Vino Blanco Santiago Ruiz</h4></a>
-                    <p>Botella 750 ml</p>
                     <p>Precio: $212</p>
-                    <button class="add-to-cart"><a href="./carrito.html">Añadir al Carrito</a></button>
+                    <button class="add-to-cart" data-name="Vino Blanco Santiago Ruiz" data-price="212" data-img="./Img/vino2.png">Añadir al Carrito</button>
+
                 </div>
                 <div class="producto">
                     <img src="./Img/vino3.png" alt="Vino 3">
                     <a href="./productos/vino3.html"><h4>Vino Rosado Portillo Rose</h4></a>
-                    <p>Botella 750 ml</p>
                     <p>Precio: $64</p>
-                    <button class="add-to-cart"><a href="./carrito.html">Añadir al Carrito</a></button>
+                    <button class="add-to-cart" data-name="Vino Rosado Portillo Rose" data-price="64" data-img="./Img/vino3.png">Añadir al Carrito</button>
+
                 </div>
                 <div class="producto">
                     <img src="./Img/vino4.png" alt="Vino 4">
                     <a href="./productos/vino4.html"><h4>Vino Mouton Cadet Rouge Kosher</h4></a>
-                    <p>Botella 750 ml</p>
                     <p>Precio: $147</p>
-                    <button class="add-to-cart"><a href="./carrito.html">Añadir al Carrito</a></button>
+                    <button class="add-to-cart" data-name="Vino Mouton Cadet Rouge Kosher" data-price="147" data-img="./Img/vino4.png">Añadir al Carrito</button>
+
                 </div>
             </div>
         </div>
@@ -147,30 +140,30 @@
                 <div class="producto">
                     <img src="./Img/ron1.png" alt="Ron 1">
                     <a href="./productos/ron1.html"><h4>RON ZACAPA 23 AÑOS</h4></a>
-                    <p>Botella 750 ml</p>
                     <p>Precio: $264</p>
-                    <button class="add-to-cart"><a href="./carrito.html">Añadir al Carrito</a></button>
+                    <button class="add-to-cart" data-name="RON ZACAPA 23 AÑOS" data-price="264" data-img="./Img/ron1.png">Añadir al Carrito</button>
+
                 </div>
                 <div class="producto">
                     <img src="./Img/ron2.png" alt="Ron 2">
                     <a href="./productos/ron2.html"><h4>Ron Quimbaya Artesanal</h4></a>
-                    <p>Botella 700 ml</p>
                     <p>Precio: $245</p>
-                    <button class="add-to-cart"><a href="./carrito.html">Añadir al Carrito</a></button>
+                    <button class="add-to-cart" data-name="Ron Quimbaya Artesanal" data-price="245" data-img="./Img/ron2.png">Añadir al Carrito</button>
+
                 </div>
                 <div class="producto">
                     <img src="./Img/ron3.png" alt="Ron 3">
                     <a href="./productos/ron3.html"><h4>RON ZACAPA CENTENARIO AMBAR</h4></a>
-                    <p>Botella 750 ml</p>
                     <p>Precio: $120</p>
-                    <button class="add-to-cart"><a href="./carrito.html">Añadir al Carrito</a></button>
+                    <button class="add-to-cart" data-name="RON ZACAPA CENTENARIO AMBAR" data-price="120" data-img="./Img/ron3.png">Añadir al Carrito</button>
+
                 </div>
                 <div class="producto">
                     <img src="./Img/ron4.png" alt="Ron 4">
                     <a href="./productos/ron4.html"><h4>Ron Havana Añejo 7 Años</h4></a>
-                    <p>Botella 750 ml</p>
                     <p>Precio: $176</p>
-                    <button class="add-to-cart"><a href="./carrito.html">Añadir al Carrito</a></button>
+                    <button class="add-to-cart" data-name="Ron Havana Añejo 7 Años" data-price="176" data-img="./Img/ron4.png">Añadir al Carrito</button>
+
                 </div>
             </div>
         </div>
@@ -181,21 +174,20 @@
                 <div class="producto">
                     <img src="./Img/tequila1.png" alt="Tequila 1">
                     <a href="./productos/tequila1.html"><h4>Tequila José Cuervo Tradicional</h4></a>
-                    <p>Botella 750 ml</p>
                     <p>Precio: $195</p>
-                    <button class="add-to-cart"><a href="./carrito.html">Añadir al Carrito</a></button>
+                    <button class="add-to-cart" data-name="Tequila José Cuervo Tradicional" data-price="195" data-img="./Img/tequila1.png">Añadir al Carrito</button>
+
                 </div>
                 <div class="producto">
                     <img src="./Img/tequila2.png" alt="Tequila 2">
                     <a href="./productos/tequila2.html"><h4>Tequila Don Julio Blanco</h4></a>
-                    <p>Botella 750 ml</p>
                     <p>Precio: $399</p>
-                    <button class="add-to-cart"><a href="./carrito.html">Añadir al Carrito</a></button>
+                    <button class="add-to-cart" data-name="Tequila Don Julio Blanco" data-price="399" data-img="./Img/tequila2.png">Añadir al Carrito</button>
+
                 </div>
                 <div class="producto">
                     <img src="./Img/tequila3.png" alt="Tequila 3">
                     <a href="./productos/tequila3.html"><h4>Tequila Patron Reposado</h4></a>
-                    <p>Botella 750 ml</p>
                     <p>Precio: $482</p>
                     <h4>PRODUCTO AGOTADO</h4>
                 </div>
@@ -208,28 +200,27 @@
                 <div class="producto">
                     <img src="./Img/whisky1.png" alt="Whisky 1">
                     <a href="./productos/whisky1.html"><h4>Whisky Johnnie Walker Black Label</h4></a>
-                    <p>Botella 750 ml</p>
                     <p>Precio: $320</p>
-                    <button class="add-to-cart"><a href="./carrito.html">Añadir al Carrito</a></button>
+                    <button class="add-to-cart" data-name="Whisky Johnnie Walker Black Label" data-price="320" data-img="./Img/whisky1.png">Añadir al Carrito</button>
+
                 </div>
                 <div class="producto">
                     <img src="./Img/whisky2.png" alt="Whisky 2">
                     <a href="./productos/whisky2.html"><h4>Whisky Glenfiddich 12 Años</h4></a>
-                    <p>Botella 750 ml</p>
                     <p>Precio: $350</p>
-                    <button class="add-to-cart"><a href="./carrito.html">Añadir al Carrito</a></button>
+                    <button class="add-to-cart" data-name="Whisky Glenfiddich 12 Años" data-price="350" data-img="./Img/whisky2.png">Añadir al Carrito</button>
+
                 </div>
                 <div class="producto">
                     <img src="./Img/whisky3.png" alt="Whisky 3">
                     <a href="./productos/whisky3.html"><h4>Whisky Jameson Irish Whiskey</h4></a>
-                    <p>Botella 750 ml</p>
                     <p>Precio: $275</p>
-                    <button class="add-to-cart"><a href="./carrito.html">Añadir al Carrito</a></button>
+                    <button class="add-to-cart" data-name="Whisky Jameson Irish Whiskey" data-price="275" data-img="./Img/whisky3.png">Añadir al Carrito</button>
+
                 </div>
                 <div class="producto">
                     <img src="./Img/whisky4.png" alt="Whisky 4">
                     <a href="./productos/whisky4.html"><h4>Whisky Chivas Regal 12 Años</h4></a>
-                    <p>Botella 750 ml</p>
                     <p>Precio: $370</p>
                     <h4>PRODUCTO AGOTADO</h4>
                 </div>
@@ -242,16 +233,16 @@
                 <div class="producto">
                     <img src="./Img/vodka1.png" alt="Vodka 1">
                     <a href="./productos/vodka1.html"><h4>Vodka Belvedere</h4></a>
-                    <p>Botella 750 ml</p>
                     <p>Precio: $550</p>
-                    <button class="add-to-cart"><a href="./carrito.html">Añadir al Carrito</a></button>
+                    <button class="add-to-cart" data-name="Vodka Belvedere" data-price="550" data-img="./Img/vodka1.png">Añadir al Carrito</button>
+
                 </div>
                 <div class="producto">
                     <img src="./Img/vodka2.png" alt="Vodka 2">
                     <a href="./productos/vodka2.html"><h4>Vodka Grey Goose</h4></a>
-                    <p>Botella 750 ml</p>
                     <p>Precio: $600</p>
-                    <button class="add-to-cart"><a href="./carrito.html">Añadir al Carrito</a></button>
+                    <button class="add-to-cart" data-name="Vodka Grey Goose" data-price="600" data-img="./Img/vodka2.png">Añadir al Carrito</button>
+
                 </div>
             </div>
         </div>
@@ -262,23 +253,23 @@
                 <div class="producto">
                     <img src="./Img/mezcal1.png" alt="Mezcal 1">
                     <a href="./productos/mezcal1.html"><h4>Mezcal Del Maguey Vida</h4></a>
-                    <p>Botella 750 ml</p>
                     <p>Precio: $750</p>
-                    <button class="add-to-cart"><a href="./carrito.html">Añadir al Carrito</a></button>
+                    <button class="add-to-cart" data-name="Mezcal Del Maguey Vida" data-price="750" data-img="./Img/mezcal1.png">Añadir al Carrito</button>
+
                 </div>
                 <div class="producto">
                     <img src="./Img/mezcal2.png" alt="Mezcal 2">
                     <a href="./productos/mezcal2.html"><h4>Mezcal Ilegal Joven</h4></a>
-                    <p>Botella 750 ml</p>
                     <p>Precio: $800</p>
-                    <button class="add-to-cart"><a href="./carrito.html">Añadir al Carrito</a></button>
+                    <button class="add-to-cart" data-name="Mezcal Ilegal Joven" data-price="800" data-img="./Img/mezcal2.png">Añadir al Carrito</button>
+
                 </div>
                 <div class="producto">
                     <img src="./Img/mezcal3.png" alt="Mezcal 3">
                     <a href="./productos/mezcal3.html"><h4>Mezcal Los Danzantes</h4></a>
-                    <p>Botella 750 ml</p>
                     <p>Precio: $850</p>
-                    <button class="add-to-cart"><a href="./carrito.html">Añadir al Carrito</a></button>
+                    <button class="add-to-cart" data-name="Mezcal Los Danzantes" data-price="850" data-img="./Img/mezcal3.png">Añadir al Carrito</button>
+
                 </div>
             </div>
         </div>
@@ -289,21 +280,20 @@
                 <div class="producto">
                     <img src="./Img/ginebra1.png" alt="Ginebra 1">
                     <a href="./productos/ginebra1.html"><h4>Ginebra Bombay Sapphire</h4></a>
-                    <p>Botella 750 ml</p>
                     <p>Precio: $460</p>
-                    <button class="add-to-cart"><a href="./carrito.html">Añadir al Carrito</a></button>
+                    <button class="add-to-cart" data-name="Ginebra Bombay Sapphire" data-price="460" data-img="./Img/ginebra1.png">Añadir al Carrito</button>
+
                 </div>
                 <div class="producto">
                     <img src="./Img/ginebra2.png" alt="Ginebra 2">
                     <a href="./productos/ginebra2.html"><h4>Ginebra Tanqueray</h4></a>
-                    <p>Botella 750 ml</p>
                     <p>Precio: $500</p>
-                    <button class="add-to-cart"><a href="./carrito.html">Añadir al Carrito</a></button>
+                    <button class="add-to-cart" data-name="Ginebra Tanqueray" data-price="500" data-img="./Img/ginebra2.png">Añadir al Carrito</button>
+
                 </div>
                 <div class="producto">
                     <img src="./Img/ginebra3.png" alt="Ginebra 3">
                     <a href="./productos/ginebra3.html"><h4>Ginebra Hendrick's</h4></a>
-                    <p>Botella 750 ml</p>
                     <p>Precio: $540</p>
                     <h4>PRODUCTO AGOTADO</h4>
                 </div>
@@ -321,3 +311,5 @@
     <script src="./script/script.js"></script>
 </body>
 </html>
+
+<button class="add-to-cart" data-name="Cerveza Belga Blanche de Charleroi" data-price="28" data-img="./Img/cerveza1.png">Añadir al Carrito</button>
