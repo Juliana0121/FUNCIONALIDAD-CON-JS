@@ -1,0 +1,265 @@
+{
+  "productos": {
+    "cerveza": [
+      {
+        "id": 1,
+        "nombre": "Cerveza Belga Blanche de Charleroi",
+        "descripcion": "Botella 330 ml",
+        "precio": 28,
+        "imagen": "./Img/cerveza1.png"
+      },
+      {
+        "id": 2,
+        "nombre": "Cerveza Belga Gulden Draak Classic",
+        "descripcion": "Botella 330 ml",
+        "precio": 24,
+        "imagen": "./Img/cerveza2.png"
+      },
+      {
+        "id": 3,
+        "nombre": "Cerveza Belga Chimay Red",
+        "descripcion": "Botella 750 ml",
+        "precio": 60,
+        "imagen": "./Img/cerveza3.png"
+      },
+      {
+        "id": 4,
+        "nombre": "Cerveza Delirium Tremens",
+        "descripcion": "Botella 330 ml",
+        "precio": 26,
+        "imagen": "./Img/cerveza4.png"
+      },
+      {
+        "id": 5,
+        "nombre": "Cerveza Gulden Draak Brewmaster",
+        "descripcion": "Botella 750 ml",
+        "precio": 70,
+        "imagen": "./Img/cerveza5.png"
+      },
+      {
+        "id": 6,
+        "nombre": "Cerveza St Idesbald Blond",
+        "descripcion": "Botella 330 ml",
+        "precio": 20,
+        "imagen": "./Img/cerveza6.png"
+      },
+      {
+        "id": 7,
+        "nombre": "Cerveza Inglesa Adnams Ghost Ship",
+        "descripcion": "Botella 500 ml",
+        "precio": 22,
+        "imagen": "./Img/cerveza7.png"
+      },
+      {
+        "id": 8,
+        "nombre": "Cerveza Belga Abbaye D’Aulne Brune 6º",
+        "descripcion": "Botella 750 ml",
+        "precio": 46,
+        "imagen": "./Img/cerveza8.png"
+      }
+    ],
+    "vino": [
+      {
+        "id": 9,
+        "nombre": "Vino Tinto Igneo",
+        "descripcion": "Botella 750 ml",
+        "precio": 406,
+        "imagen": "./Img/vino1.png"
+      },
+      {
+        "id": 10,
+        "nombre": "Vino Blanco Santiago Ruiz",
+        "descripcion": "Botella 750 ml",
+        "precio": 212,
+        "imagen": "./Img/vino2.png"
+      },
+      {
+        "id": 11,
+        "nombre": "Vino Rosado Portillo Rose",
+        "descripcion": "Botella 750 ml",
+        "precio": 64,
+        "imagen": "./Img/vino3.png"
+      },
+      {
+        "id": 12,
+        "nombre": "Vino Mouton Cadet Rouge Kosher",
+        "descripcion": "Botella 750 ml",
+        "precio": 147,
+        "imagen": "./Img/vino4.png"
+      }
+    ],
+    "ron": [
+      {
+        "id": 13,
+        "nombre": "RON ZACAPA 23 AÑOS",
+        "descripcion": "Botella 750 ml",
+        "precio": 264,
+        "imagen": "./Img/ron1.png"
+      },
+      {
+        "id": 14,
+        "nombre": "Ron Quimbaya Artesanal",
+        "descripcion": "Botella 700 ml",
+        "precio": 245,
+        "imagen": "./Img/ron2.png"
+      },
+      {
+        "id": 15,
+        "nombre": "RON ZACAPA CENTENARIO AMBAR",
+        "descripcion": "Botella 750 ml",
+        "precio": 120,
+        "imagen": "./Img/ron3.png"
+      },
+      {
+        "id": 16,
+        "nombre": "Ron Havana Añejo 7 Años",
+        "descripcion": "Botella 750 ml",
+        "precio": 103,
+        "imagen": "./Img/ron4.png"
+      },
+      {
+        "id": 17,
+        "nombre": "Ron Havana Club Añejo Especial",
+        "descripcion": "Botella 750 ml",
+        "precio": 71,
+        "imagen": "./Img/ron5.png"
+      },
+      {
+        "id": 18,
+        "nombre": "RON QUIMBAYA GOLD",
+        "descripcion": "Botella 700 ml",
+        "precio": 61,
+        "imagen": "./Img/ron6.png"
+      },
+      {
+        "id": 19,
+        "nombre": "RON QUIMBAYA GOLD",
+        "descripcion": "Botella 375 ml",
+        "precio": 34,
+        "imagen": "./Img/ron7.png"
+      },
+      {
+        "id": 20,
+        "nombre": "RON PAMPERO AÑEJO ANIVERSARIO",
+        "descripcion": "Botella 750 ml",
+        "precio": 210,
+        "imagen": "./Img/ron8.png"
+      }
+    ],
+    "tequila": [
+      {
+        "id": 21,
+        "nombre": "Olmeca Altos Plata Tequila",
+        "descripcion": "Botella 700 ml",
+        "precio": 182,
+        "imagen": "./Img/tequila1.png"
+      },
+      {
+        "id": 22,
+        "nombre": "Olmeca Reposado 35° Tequila",
+        "descripcion": "Botella 700 ml",
+        "precio": 77,
+        "imagen": "./Img/tequila2.png"
+      },
+      {
+        "id": 23,
+        "nombre": "TEQUILA DON JULIO BLANCO",
+        "descripcion": "Botella 750 ml",
+        "estado": "agotado",
+        "imagen": "./Img/tequila3.png"
+      }
+    ],
+    "whisky": [
+      {
+        "id": 24,
+        "nombre": "WHISKY SINGLETON OF DUFFTOWN",
+        "descripcion": "Botella 750 ml",
+        "precio": 457,
+        "imagen": "./Img/whisky1.png"
+      },
+      {
+        "id": 25,
+        "nombre": "WHISKY OLD PARR 18 AÑOS",
+        "descripcion": "Botella 750 ml",
+        "precio": 332,
+        "imagen": "./Img/whisky2.png"
+      },
+      {
+        "id": 26,
+        "nombre": "WHISKY JOHNNIE WALKER DOUBLE",
+        "descripcion": "Botella 750 ml",
+        "precio": 173,
+        "imagen": "./Img/whisky3.png"
+      },
+      {
+        "id": 27,
+        "nombre": "WHISKY OLD PARR 12 AÑOS",
+        "descripcion": "Botella 750 ml",
+        "estado": "agotado",
+        "imagen": "./Img/whisky4.png"
+      }
+    ],
+    "vodka": [
+      {
+        "id": 28,
+        "nombre": "VODKA KETEL ONE X750ML",
+        "descripcion": "Botella 750 ml",
+        "precio": 163,
+        "imagen": "./Img/vodka1.png"
+      },
+      {
+        "id": 29,
+        "nombre": "Vodka Absolut",
+        "descripcion": "Botella 700 ml",
+        "precio": 85,
+        "imagen": "./Img/vodka2.png"
+      }
+    ],
+    "mezcal": [
+      {
+        "id": 30,
+        "nombre": "Mezcal Los Nahuales",
+        "descripcion": "Botella 700 ml",
+        "precio": 387,
+        "imagen": "./Img/mezcal1.png"
+      },
+      {
+        "id": 31,
+        "nombre": "Mezcal Alipús Santa Ana Del Río",
+        "descripcion": "Botella 700 ml",
+        "precio": 365,
+        "imagen": "./Img/mezcal2.png"
+      },
+      {
+        "id": 32,
+        "nombre": "Mezcal Alipús San Luis",
+        "descripcion": "Botella 700 ml",
+        "precio": 365,
+        "imagen": "./Img/mezcal3.png"
+      }
+    ],
+    "ginebra": [
+      {
+        "id": 33,
+        "nombre": "Ginebra Beefeater 24°",
+        "descripcion": "Botella 700 ml",
+        "precio": 204,
+        "imagen": "./Img/ginebra1.png"
+      },
+      {
+        "id": 34,
+        "nombre": "GINEBRA TANQUERAY RANGPUR",
+        "descripcion": "Botella 750 ml",
+        "precio": 158,
+        "imagen": "./Img/ginebra2.png"
+      },
+      {
+        "id": 35,
+        "nombre": "GINEBRA GORDON'S DRY GIN",
+        "descripcion": "Botella 750 ml",
+        "estado": "agotado",
+        "imagen": "./Img/ginebra3.png"
+      }
+    ]
+  }
+}

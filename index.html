@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Alfil - Venta de Licores</title>
+    <link rel="stylesheet" href="./estilos/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./pages/about.html">About</a></li>
+                <li><a href="./pages/contact.html">Contact</a></li>
+                <li class="dropdown">
+                    <a href="#productos" class="dropbtn">Productos</a>
+                    <div class="dropdown-content">
+                        <a href="#cerveza">Cerveza</a>
+                        <a href="#vino">Vino</a>
+                        <a href="#ron">Ron</a>
+                        <a href="#tequila">Tequila</a>
+                        <a href="#whisky">Whisky</a>
+                        <a href="#vodka">Vodka</a>
+                        <a href="#mezcal">Mezcal</a>
+                        <a href="#ginebra">Ginebra</a>
+                    </div>
+                </li>
+                <li class="cart-icon">
+                    <a href="./carrito.html" class="fas fa-shopping-cart"></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <h1>El Alfil</h1>
+        </div>
+        <div class="cart-preview">
+            <h4>Carrito</h4>
+            <div id="cart-items"></div>
+            <p>Total: $<span id="cart-total">0</span></p>
+            <button id="checkout">Proceder a la Compra</button>
+        </div>
+    </header>
+
+    <section id="productos">
+        <h2>Todos Productos</h2>
+        
+        <div class="category" id="cerveza">
+            <h3>Cerveza</h3>
+            <div class="productos">
+                <div class="producto">
+                    <img src="./Img/cerveza1.png" alt="Cerveza 1">
+                    <a href="./productos/cerveza1.html"><h4>Cerveza Belga Blanche de Charleroi</h4></a>
+                    <p>Botella 330 ml</p>
+                    <p>Precio: $28</p>
+                    <button class="add-to-cart"> <a href="./carrito.html"></a>Añadir al Carrito</button>
+                    <button class="add-to-favorites">❤️</button>
+                </div>
+                <div class="producto">
+                    <img src="./Img/cerveza2.png" alt="Cerveza 1">
+                    <a href="./productos/cerveza2.html"><h4>Cerveza Belga Gulden Draak Classic</h4></a>
+                    <p>Botella 330 ml</p>
+                    <p>Precio: $24</p>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                    <button class="add-to-favorites">❤️</button>
+                </div>
+                <div class="producto">
+                    <img src="./Img/cerveza3.png" alt="Cerveza 1">
+                    <a href="./productos/cerveza3.html"><h4>Cerveza Belga Chimay Red</h4></a>
+                    <p>Botella 750 ml</p>
+                    <p>Precio: $60</p>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                    <button class="add-to-favorites">❤️</button>
+                </div>
+                <div class="producto">
+                    <img src="./Img/cerveza4.png" alt="Cerveza 1">
+                    <a href="./productos/cerveza4.html"><h4>Cerveza Delirium Tremens</h4></a>
+                    <p>Botella 330 ml</p>
+                    <p>Precio: $26</p>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                    <button class="add-to-favorites">❤️</button>
+                </div>
+                <div class="producto">
+                    <img src="./Img/cerveza5.png" alt="Cerveza 1">
+                    <a href="./productos/cerveza5.html"><h4>Cerveza Gulden Draak Brewmaster</h4></a>
+                    <p>Botella 750 ml</p>
+                    <p>Precio: $70</p>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                    <button class="add-to-favorites">❤️</button>
+                </div>
+                <div class="producto">
+                    <img src="./Img/cerveza6.png" alt="Cerveza 1">
+                    <a href="./productos/cerveza6.html"><h4>Cerveza St Idesbald Blond</h4></a>
+                    <p>Botella 330 ml</p>
+                    <p>Precio: $20</p>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                    <button class="add-to-favorites">❤️</button>
+                </div>
+                <div class="producto">
+                    <img src="./Img/cerveza7.png" alt="Cerveza 1">
+                    <a href="./productos/cerveza7.html"><h4>Cerveza Inglesa Adnams Ghost Ship</h4></a>
+                    <p>Botella 500 ml</p>
+                    <p>Precio: $22</p>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                    <button class="add-to-favorites">❤️</button>
+                </div>
+                <div class="producto">
+                    <img src="./Img/cerveza8.png" alt="Cerveza 1">
+                    <a href="./productos/cerveza8.html"><h4>Cerveza Belga Abbaye D’Aulne Brune 6º</h4></a>
+                    <p>Botella 750 ml</p>
+                    <p>Precio: $48</p>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                    <button class="add-to-favorites">❤️</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="category" id="vino">
+            <h3>Vino</h3>
+            <div class="productos">
+                <div class="producto">
+                    <img src="./Img/vino1.png" alt="Vino 1">
+                    <a href="./productos/vino1.html"><h4>Vino Tinto Igneo</h4></a>
+                    <p>Botella 750 ml</p>
+                    <p>Precio: $406</p>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                    <button class="add-to-favorites">❤️</button>
+                </div>
+                <div class="producto">
+                    <img src="./Img/vino2.png" alt="Vino 1">
+                    <a href="./productos/vino2.html"><h4>Vino Blanco Santiago Ruiz</h4></a>
+                    <p>Botella 750 ml</p>
+                    <p>Precio: $212</p>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                    <button class="add-to-favorites">❤️</button>
+                </div>
+                <div class="producto">
+                    <img src="./Img/vino3.png" alt="Vino 1">
+                    <a href="./productos/vino3.html"><h4>Vino Rosado Portillo Rose</h4></a>
+                    <p>Botella 750 ml</p>
+                    <p>Precio: $64</p>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                    <button class="add-to-favorites">❤️</button>
+                </div>
+                <div class="producto">
+                    <img src="./Img/vino4.png" alt="Vino 1">
+                    <a href="./productos/vino4.html"><h4>Vino Mouton Cadet Rouge Kosher</h4></a>
+                    <p>Botella 750 ml</p>
+                    <p>Precio: $147</p>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                    <button class="add-to-favorites">❤️</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="category" id="ron">
+            <h3>Ron</h3>
+            <div class="productos">
+                <div class="producto">
+                    <img src="./Img/ron1.png" alt="Ron 1">
+                    <a href="./productos/ron1.html"><h4>RON ZACAPA 23 AÑOS</h4></a>
+                    <p>Botella 750 ml</p>
+                    <p>Precio: $264</p>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                    <button class="add-to-favorites">❤️</button>
+                </div>
+                <div class="producto">
+                    <img src="./Img/ron2.png" alt="Ron 1">
+                    <a href="./productos/ron2.html"><h4>Ron Quimbaya Artesanal</h4></a>
+                    <p>Botella 700 ml</p>
+                    <p>Precio: $245</p>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                    <button class="add-to-favorites">❤️</button>
+                </div>
+                <div class="producto">
+                    <img src="./Img/ron3.png" alt="Ron 1">
+                    <a href="./productos/ron3.html"><h4>RON ZACAPA CENTENARIO AMBAR</h4></a>
+                    <p>Botella 750 ml</p>
+                    <p>Precio: $120</p>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                    <button class="add-to-favorites">❤️</button>
+                </div>
+                <div class="producto">
+                    <img src="./Img/ron4.png" alt="Ron 1">
+                    <a href="./productos/ron4.html"><h4>Ron Havana Añejo 7 Años</h4></a>
+                    <p>Botella 750 ml</p>
+                    <p>Precio: $103</p>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                    <button class="add-to-favorites">❤️</button>
+                </div>
+                <div class="producto">
+                    <img src="./Img/ron5.png" alt="Ron 1">
+                    <a href="./productos/ron5.html"><h4>Ron Havana Club Añejo Especial</h4></a>
+                    <p>Botella 750 ml</p>
+                    <p>Precio: $71</p>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                    <button class="add-to-favorites">❤️</button>
+                </div>
+                <div class="producto">
+                    <img src="./Img/ron6.png" alt="Ron 1">
+                    <a href="./productos/ron6.html"><h4>RON QUIMBAYA GOLD</h4></a>
+                    <p>Botella 700 ml</p>
+                    <p>Precio: $61</p>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                    <button class="add-to-favorites">❤️</button>
+                </div>
+                <div class="producto">
+                    <img src="./Img/ron7.png" alt="Ron 1">
+                    <a href="./productos/ron7.html"><h4>RON QUIMBAYA GOLD</h4></a>
+                    <p>Botella 375 ml</p>
+                    <p>Precio: $34</p>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                    <button class="add-to-favorites">❤️</button>
+                </div>
+                <div class="producto">
+                    <img src="./Img/ron8.png" alt="Ron 1">
+                    <a href="./productos/ron8.html"><h4>RON PAMPERO AÑEJO ANIVERSARIO</h4></a>
+                    <p>Botella 750 ml</p>
+                    <p>Precio: $210</p>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                    <button class="add-to-favorites">❤️</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="category" id="tequila">
+            <h3>Tequila</h3>
+            <div class="productos">
+                <div class="producto">
+                    <img src="./Img/tequila1.png" alt="Tequila 1">
+                    <a href="./productos/tequila1.html"><h4>Olmeca Altos Plata Tequila</h4></a>
+                    <p>Botella 700 ml</p>
+                    <p>Precio: $182</p>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                    <button class="add-to-favorites">❤️</button>
+                </div>
+                <div class="producto">
+                    <img src="./Img/tequila2.png" alt="Tequila 1">
+                    <a href="./productos/tequila2.html"><h4>Olmeca Reposado 35° Tequila</h4></a>
+                    <p>Botella 700 ml</p>
+                    <p>Precio: $77</p>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                    <button class="add-to-favorites">❤️</button>
+                </div>
+                <div class="producto">
+                    <img src="./Img/tequila3.png" alt="Tequila 1">
+                    <a href="./productos/tequila3.html"><h4>TEQUILA DON JULIO BLANCO</h4></a>
+                    <p>Botella 750 ml</p>
+                    <p class="agotado">Producto Agotado</p>
+                    <button class="add-to-favorites">❤️</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="category" id="whisky">
+            <h3>Whisky</h3>
+            <div class="productos">
+                <div class="producto">
+                    <img src="./Img/whisky1.png" alt="Whisky 1">
+                    <a href="./productos/whisky1.html"><h4>WHISKY SINGLETON OF DUFFTOWN</h4></a>
+                    <p>Botella 750 ml</p>
+                    <p>Precio: $457</p>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                    <button class="add-to-favorites">❤️</button>
+                </div>
+                <div class="producto">
+                    <img src="./Img/whisky2.png" alt="Whisky 1">
+                    <a href="./productos/whisky2.html"><h4>WHISKY OLD PARR 18 AÑOS</h4></a>
+                    <p>Botella 750 ml</p>
+                    <p>Precio: $332</p>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                    <button class="add-to-favorites">❤️</button>
+                </div>
+                <div class="producto">
+                    <img src="./Img/whisky3.png" alt="Whisky 1">
+                    <a href="./productos/whisky3.html"><h4>WHISKY JOHNNIE WALKER DOUBLE</h4></a>
+                    <p>Botella 750 ml</p>
+                    <p>Precio: $173</p>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                    <button class="add-to-favorites">❤️</button>
+                </div>
+                <div class="producto">
+                    <img src="./Img/whisky4.png" alt="Whisky 1">
+                    <a href="./productos/whisky4.html"><h4>WHISKY OLD PARR 12 AÑOS</h4></a>
+                    <p>Botella 750 ml</p>
+                    <p>Producto Agotado</p>
+                    <button class="add-to-favorites">❤️</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="category" id="vodka">
+            <h3>Vodka</h3>
+            <div class="productos">
+                <div class="producto">
+                    <img src="./Img/vodka1.png" alt="Vodka 1">
+                    <a href="./productos/vodka1.html"><h4>VODKA KETEL ONE</h4></a>
+                    <p>Botella 750 ml</p>
+                    <p>Precio: $163</p>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                    <button class="add-to-favorites">❤️</button>
+                </div>
+                <div class="producto">
+                    <img src="./Img/vodka2.png" alt="Vodka 1">
+                    <a href="./productos/vodka2.html"><h4>Vodka Absolut</h4></a>
+                    <p>Botella 700 ml</p>
+                    <p>Precio: $85</p>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                    <button class="add-to-favorites">❤️</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="category" id="mezcal">
+            <h3>Mezcal</h3>
+            <div class="productos">
+                <div class="producto">
+                    <img src="./Img/mezcal1.png" alt="Mezcal 1">
+                    <a href="./productos/mezcal1.html"><h4>Mezcal Los Nahuales</h4></a>
+                    <p>Botella 700 ml</p>
+                    <p>Precio: $387</p>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                    <button class="add-to-favorites">❤️</button>
+                </div>
+                <div class="producto">
+                    <img src="./Img/mezcal2.png" alt="Mezcal 1">
+                    <a href="./productos/mezcal2.html"><h4>Mezcal Alipús Santa Ana Del Río</h4></a>
+                    <p>Botella 700 ml</p>
+                    <p>Precio: $365</p>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                    <button class="add-to-favorites">❤️</button>
+                </div>
+                <div class="producto">
+                    <img src="./Img/mezcal3.png" alt="Mezcal 1">
+                    <a href="./productos/mezcal3.html"><h4>Mezcal Alipús San Luis</h4></a>
+                    <p>Botella 700 ml</p>
+                    <p>Precio: $365</p>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                    <button class="add-to-favorites">❤️</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="category" id="ginebra">
+            <h3>Ginebra</h3>
+            <div class="productos">
+                <div class="producto">
+                    <img src="./Img/ginebra1.png" alt="Ginebra 1">
+                    <a href="./productos/ginebra1.html"><h4>Ginebra Beefeater 24°</h4></a>
+                    <p>Botella 700 ml</p>
+                    <p>Precio: $204</p>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                    <button class="add-to-favorites">❤️</button>
+                </div>
+                <div class="producto">
+                    <img src="./Img/ginebra2.png" alt="Ginebra 1">
+                    <a href="./productos/ginebra2.html"><h4>GINEBRA TANQUERAY RANGPUR</h4></a>
+                    <p>Botella 750 ml</p>
+                    <p>Precio: $158</p>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                    <button class="add-to-favorites">❤️</button>
+                </div>
+                <div class="producto">
+                    <img src="./Img/ginebra3.png" alt="Ginebra 1">
+                    <a href="./productos/ginebra3.html"><h4>GINEBRA GORDON'S DRY GIN</h4></a>
+                    <p>Botella 750 ml</p>
+                    <p>Producto Agotado</p>
+                    <button class="add-to-favorites">❤️</button>
+                </div>
+            </div>
+        </div>
+    
+
+    </section>
+    <footer>
+        <p>&copy; 2024 El Alfil. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="./script/script.js"></script>
+</body>
+</html>

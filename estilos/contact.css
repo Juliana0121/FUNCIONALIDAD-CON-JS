@@ -1,0 +1,207 @@
+:root{
+    --yellow: #f05223;
+}
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: rgb(186, 176, 160);
+}
+
+.heading span{
+    color: var(--yellow);
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #635a5a;
+    color: #000000;
+    padding: 0.5rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover{
+    background: var(--yellow);
+}
+
+.inicio{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url("../Img/cerveza_inicio.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.inicio .content{
+    max-width: 50rem;
+}
+
+.inicio .content h3{
+    font-size: 6rem;
+    color: #333;
+}
+
+.inicio .content span{
+    font-size: 3.5rem;
+    color: var(--yellow);
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.inicio .content p{
+    font-size: 1.5rem;
+    color: #2b2424;
+    padding: 1rem 0;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.acercade .row{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+
+.acercade .row .video-container{
+    flex: 1 1 40rem;
+    position: relative;
+}
+
+.acercade .row .content{
+    flex: 1 1 40rem;
+}
+
+.acercade .row .content h3{
+    font-size: 3rem;
+    color: #333;
+}
+
+.acercade .row .content p{
+    font-size: 1.5rem;
+    color: rgb(105, 88, 88);
+    padding: 5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.contacto .row{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.contacto .row form{
+    flex: 1 1 40rem;
+    padding: 2rem 2.5rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    border: 1rem solid rgba(0,0,0,.1);
+    background: #ffffff;
+    border-radius: .5rem;
+}
+
+.contacto .row .image{
+    flex: 1 1 40rem;
+}
+
+.contacto .row .image img{
+    width: 100%;
+}
+
+.contacto .row form .box{
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #333;
+    text-transform: none;
+    border: .1rem solid rgba(0,0,0,.1);
+    border-radius: .5rem;
+    margin: .7rem 0;
+}
+
+.footer .credito{
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: #333;
+    border-top: .1rem solid rgba(0,0,0,.1);
+}
+
+.footer .credito span{
+    color: var(--yellow);
+}
+
+.confirmation-message {
+    display: none;
+    padding: 1rem;
+    margin-top: 2rem;
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: .5rem;
+    text-align: center;
+}
+
+
+@media (max-width:991px){
+    
+    section{
+        padding: 2rem;
+    }
+
+    .inicio{
+        background-position: left;
+    }
+}
+
+@media (max-width:768px){
+
+    inicio.content h3{
+        font-size: 5rem;
+    }
+
+    inicio.content span{
+        font-size: 2.5rem;
+    }
+
+}
+
+@media (max-width:450px){
+
+    .heading{
+        font-size: 3rem;
+    }
+
+}
