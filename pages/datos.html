@@ -4,66 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Confirmación de Compra</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(to right, #ff7e5f, #feb47b);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .container {
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 400px;
-        }
-        .container h2 {
-            margin-bottom: 20px;
-            color: #333;
-            text-align: center;
-        }
-        .form-group {
-            margin-bottom: 15px;
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-            color: #555;
-        }
-        .form-group input {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            box-sizing: border-box;
-        }
-        .form-group input:focus {
-            border-color: #ff7e5f;
-            outline: none;
-        }
-        .form-group button {
-            width: 100%;
-            padding: 12px;
-            background-color: #ff7e5f;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        .form-group button:hover {
-            background-color: #feb47b;
-        }
-    </style>
+    <link rel="stylesheet" href="../estilos/datos.css">
 </head>
 <body>
     <div class="container">
         <h2>Confirmar Compra</h2>
-        <form>
+        <form id="checkout-form">
             <div class="form-group">
                 <label for="name">Nombre Completo</label>
                 <input type="text" id="name" name="name" required>
@@ -89,9 +35,18 @@
                 <input type="text" id="cvv" name="cvv" required>
             </div>
             <div class="form-group">
-                <a href="./factura.html"><button type="checkout">Confirmar Compra</button></a>
+                <button type="button" onclick="showConfirmation()">Confirmar Compra</button>
             </div>
         </form>
     </div>
+
+    <div id="confirmation-modal" class="modal">
+        <div class="modal-content">
+            <h2>Gracias por su compra, su pedido llegará en un plazo de 15 días.</h2>
+            <button class="close-btn" onclick="closeConfirmation()">Cerrar</button>
+        </div>
+    </div>
+    <script src="../script/datos.js"></script>
+
 </body>
 </html>
