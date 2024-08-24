@@ -6,7 +6,7 @@ Explora nuestra tienda en línea de licores y encuentra una selección exclusiva
 
 Descarga en ZIP, extrae en su equipo. Ya abierto en VS Code, click en "index.html", click izquierzo y live server. 🎉
 
-### 📋 Caracteristicas
+## 📋 Caracteristicas
 
 1. Selección Exclusiva
 
